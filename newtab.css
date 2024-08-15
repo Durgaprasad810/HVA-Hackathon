@@ -146,7 +146,7 @@ textarea {
   box-sizing: border-box;
   background-color: #ecf1ff;
   resize: none;
-  margin-bottom: 10px; /* Added margin-bottom */
+  margin-bottom: 10px; 
 }
 
 #scribble-canvas {
@@ -262,6 +262,33 @@ textarea {
   background-color: #ecf1ff;
 }
 
+.star-rating {
+  display: inline-block;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffa500; 
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: #ffa500; }
+
+.star-rating input[type="radio"]:checked ~ label ~ label {
+  color: #ffa500; 
+}
+
+
 #add-task-button {
   width: 80px;
   padding: 5px 10px;
@@ -300,28 +327,3 @@ textarea {
   background-color: #0056b3; 
 }
 
-.star-rating {
-  display: inline-block;
-}
-
-.star-rating input[type="radio"] {
-  display: none;
-}
-
-.star-rating label {
-  font-size: 24px;
-  color: #ffa500;
-  cursor: pointer;
-}
-
-.star-rating label:hover,
-.star-rating label:hover ~ label {
-  color: #ccc; 
-}
-
-.star-rating input[type="radio"]:checked ~ label {
-  color: #ccc; }
-
-.star-rating input[type="radio"]:checked ~ label ~ label {
-  color: #ccc; 
-}
