@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Extension with widgets for Google Sheets, Google Forms, Scribble Note, and Pomodoro Timer.",
   "icons": {
-    "16": "images/icon16.png"
+    "16": "images/icon.png"
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
